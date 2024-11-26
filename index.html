@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RBAC Admin Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Admin Dashboard - Role-Based Access Control</h1>
+  </header>
+  <main>
+    <section id="userManagement">
+      <h2>User Management</h2>
+      <button onclick="openAddUserModal()">Add User</button>
+      <table id="userTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamic content -->
+        </tbody>
+      </table>
+    </section>
+    <section id="roleManagement">
+      <h2>Role Management</h2>
+      <button onclick="openAddRoleModal()">Add Role</button>
+      <div id="rolesList">
+        <!-- Dynamic content -->
+      </div>
+    </section>
+  </main>
+  <div id="modal" class="hidden">
+    <!-- Dynamic modal content -->
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
